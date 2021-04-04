@@ -1,5 +1,11 @@
-//! This is a logic gates simulation crate built to demonstrate writing unit tests
-// logic_gates/src/lib.rs
+//! # Demo example crate for Chapter 3
+//! This is a logic gates simulation crate built to demonstrate writing unit tests, integration tests,
+//! documentation tests.
+
+#![doc(html_logo_url = "https://d30y9cdsu7xlg0.cloudfront.net/png/411962-200.png")]
+
+/// Implements a boolean `and` gate taking as input two bits and returning a bit as its
+/// output
 pub fn and(a: u8, b: u8) -> u8 {
     match (a, b) {
         (1, 1) => 1,
@@ -7,6 +13,9 @@ pub fn and(a: u8, b: u8) -> u8 {
     }
 
 }
+
+/// Implements a boolean `xor` gate taking as input two bits and returning a bit as its
+/// output
 pub fn xor(a: u8, b: u8) -> u8 {
     if a != b {
         1
