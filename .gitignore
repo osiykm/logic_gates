@@ -1,0 +1,6 @@
+/target
+Cargo.lock
+/.idea/.gitignore
+/.idea/logic_gates.iml
+/.idea/modules.xml
+/.idea/vcs.xml
